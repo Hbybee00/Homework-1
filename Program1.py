@@ -1,12 +1,10 @@
-# Your Name Here
+# Hayden Bybee
 # UWYO COSC 1010
 # Submission Date
 # HW 01
-# Lab Section: 
+# Lab Section: 16
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# N/A
 
 # Homework Question:
 # 
@@ -31,6 +29,41 @@
 
 #Solution
 
+students = [ {"name": "Alice", "scores": {"Math": 85, "Science": 90, "English": 78}},
+     {"name": "Bob", "scores": {"Math": 70, "Science": 88, "English": 82}},
+     {"name": "Charlie", "scores": {"Math": 92, "Science": 81, "English": 89}},
+     {"name": "David", "scores": {"Math": 60, "Science": 75, "English": 80}} ]
 
+bobavg = 0
 
+charlieavg = 0
 
+aliceavg = 0
+
+davidavg = 0
+
+Averages = {}
+
+for student in students:
+    if student["name"] == "Bob":
+        Scorelist2 = student["scores"]
+        bobavg = (Scorelist2["Math"] + Scorelist2["Science"] + Scorelist2["English"])/3
+        print(f"Bob's average score is {bobavg}!")
+        Averages[student["name"]] = bobavg
+    elif student["name"] == "Alice":
+        Scorelist1 = student["scores"]
+        aliceavg = (Scorelist1["Math"] + Scorelist1["Science"] + Scorelist1["English"])/3
+        print(f"Alice's average score is {aliceavg}!")
+        Averages[student["name"]] = aliceavg
+    elif student["name"] == "Charlie":
+        Scorelist3 = student["scores"]
+        charlieavg = (Scorelist3["Math"] + Scorelist3["Science"] + Scorelist3["English"])/3
+        print(f"Charlie's average score is {charlieavg}!")
+        Averages[student["name"]] = charlieavg
+    elif student["name"] == "David":
+        Scorelist4 = student["scores"]
+        davidavg = (Scorelist4["Math"] + Scorelist4["Science"] + Scorelist4["English"])/3
+        print(f"David's average score is {davidavg}!")
+        Averages[student["name"]] = davidavg
+
+print(Averages)
