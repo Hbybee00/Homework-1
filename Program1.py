@@ -50,20 +50,26 @@ for student in students:
         bobavg = (Scorelist2["Math"] + Scorelist2["Science"] + Scorelist2["English"])/3
         print(f"Bob's average score is {bobavg}!")
         Averages[student["name"]] = bobavg
+        if bobavg > 80:
+             print("Bob's average is greater than 80!")
     elif student["name"] == "Alice":
         Scorelist1 = student["scores"]
         aliceavg = (Scorelist1["Math"] + Scorelist1["Science"] + Scorelist1["English"])/3
         print(f"Alice's average score is {aliceavg}!")
         Averages[student["name"]] = aliceavg
+        if aliceavg > 80:
+             print("Alice's average is greater than 80!")
     elif student["name"] == "Charlie":
         Scorelist3 = student["scores"]
         charlieavg = (Scorelist3["Math"] + Scorelist3["Science"] + Scorelist3["English"])/3
         print(f"Charlie's average score is {charlieavg}!")
         Averages[student["name"]] = charlieavg
+        if charlieavg > 80:
+             print("Charlie's average is greater than 80!")
     elif student["name"] == "David":
         Scorelist4 = student["scores"]
         davidavg = (Scorelist4["Math"] + Scorelist4["Science"] + Scorelist4["English"])/3
         print(f"David's average score is {davidavg}!")
         Averages[student["name"]] = davidavg
-
-print(Averages)
+        if davidavg > 80:
+             print("David's average is greater than 80!")
